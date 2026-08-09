@@ -1,0 +1,73 @@
+Prompt Log : 
+1.
+"Can you explain what label encoding is in machine learning and when it should be used? Provide a simple example."
+2.
+"What is the difference between label encoding and one-hot encoding? When should I use each technique?"
+3.
+"Explain the Minkowski distance formula and how the 'p' parameter affects the distance calculation. What are the special cases when p=1 and p=2?"
+4.
+"What is the dot product of two vectors and how is it used in machine learning? Please provide the mathematical formula."
+5.
+"What is the role of the random seed in K-means clustering and why is it important for reproducibility?"
+6.
+"I need to implement the following functions from scratch in Python without using libraries like scikit-learn:
+•	label_encoding(df, column_name)
+•	one_hot_encoding(df, column_name)
+•	minkowski_distance(u, v, p)
+•	dot_product(a, b)
+•	calculate_variance(data, mean_val)
+•	calculate_std_dev(data, variance_val)
+•	calculate_stats(data)
+•	kmeans(X, k, max_iters, tol)
+Can you provide the structure and function signatures for these implementations?"
+7.
+"Show me how to read an Excel file in pandas and identify categorical columns. What's the best way to handle missing values before statistical calculations?"
+8.
+"How can I compare my custom implementation with NumPy/Scipy library functions to verify correctness?"
+
+
+9.
+"Generate Python code for label_encoding function. It should take a DataFrame and column name, create a mapping from unique values to numeric indices, and return both the updated DataFrame and the mapping dictionary."
+AI Response provided code with explanations
+10.
+"Now generate the one_hot_encoding function. I want it to use pd.get_dummies() but ensure it handles the column properly and returns the DataFrame without the original column. Also, address the PerformanceWarning about DataFrame fragmentation."
+11.
+"I need to implement calculate_mean, calculate_variance, and calculate_std_dev functions that work for both DataFrame and list/array inputs. The functions should handle NaN values properly."
+12.
+"Write the calculate_stats function that calls the three statistical functions and returns mean, variance, and standard deviation. Include code to extract numeric columns and handle missing data."
+13.
+"Generate code to compare my custom statistical functions with NumPy's mean() and std() functions. I want to see the difference for each feature."
+14.
+"Write Python code to create a histogram of the first numeric feature with 15 bins. Include the mean as a vertical dashed line. Use matplotlib for visualization."
+15.
+"How do I calculate and display statistics for the selected feature including mean, variance, standard deviation, number of points, bin count, and data range?"
+16.
+"How do I select the first 200 samples from the cleaned numeric data and apply K-means with k=3? Show the code to display cluster centroids and distribution."
+17.
+"The K-means results show all samples in one cluster. What could be causing this issue and how can I fix it?"
+AI Response suggested data scaling and handling missing values
+18.
+"My K-means implementation shows NaN values in centroids. How should I handle missing data before clustering?"
+AI Response suggested using .dropna() before processing
+19.
+"The Minkowski distance plot isn't showing correctly. Can you help me fix the plotting code?"
+20.
+"Generate unit test cases for each function to verify correctness. Include test data and expected outputs."
+21.
+"Create a performance comparison test that measures execution time for:
+•	Label encoding on the dataset
+•	One-hot encoding on the dataset
+•	Minkowski distance calculation for p=1 to 10
+•	Statistical calculations on numeric data
+•	K-means clustering on 200 samples"
+22.
+"Generate a complete test suite that validates our custom implementations against library functions and reports any discrepancies."
+23.
+"Now combine all the functions into a single complete Python script with all required imports. Ensure the code follows the assignment requirements and includes comments explaining each section."
+24.
+"The assignment requires comments in the code. Please add comprehensive comments explaining each line of code, including the purpose of functions, parameters, and key operations."
+
+
+
+
+
